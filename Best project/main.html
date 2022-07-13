@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <meta name="descripton" content="We are Google ,here we make the best search engines.">
+    <link rel="icon" href="logo.png">
+    <meta name="cannonical" content="">
+    <meta name="robots" content="follow">
+    <meta name="author" content="Gourab Chakraborty">
+    <style>
+        *{margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+        }
+        .main{
+            position:fixed;
+
+            z-index: -1;
+            height: 407%;
+            width: 100%;
+            
+            filter:opacity(0.3);
+            
+        }
+        button{
+            cursor: pointer;
+        }
+        nav{
+            height:60px;
+            background-color: rgb(36, 36, 36);
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+        nav img{
+            height: 40px;
+            margin:11px 0px 0px 20px;
+        }
+        #show{
+            border: rgb(255, 255, 255);
+            background: transparent;
+            font-size: larger;
+            color: white;
+            position: absolute;
+            top: 11px;
+            right: 30px;
+            padding: 10px;
+            z-index: 4;
+            
+
+        }
+         #hide{
+            border: rgb(36, 36, 36);
+            background: transparent;
+            font-size: larger;
+            color: white;
+            position: absolute;
+            top: 9px;
+            right: 29px;
+            padding: 10px;
+            
+            
+
+        }
+        
+        
+       
+
+
+        @keyframes slide {
+  from {
+    position: absolute;
+    
+    right: 30px;
+    top: 0px;
+  }
+  to {
+     position: absolute;
+   
+    right: 294px;
+    top: 0px;
+    
+   
+  }
+
+}
+       
+        
+        .side-bar {
+            background: black;
+            color: white;
+            padding: 50px 0px 100% 50px ;
+            width: 300px;     
+            float: right;
+            height: 1000px;
+            border: rgb(255, 180, 180) solid 2px;
+            display: none; 
+            box-shadow: -10px -10px 20px black;
+            opacity: 0.9;
+           
+            
+          
+           -webkit-animation-name: ani;
+  -webkit-animation-duration:0.3s;
+  -webkit-animation-fill-mode: forwards;
+  }
+  
+           
+ 
+
+@-webkit-keyframes ani {
+  from {
+    position: absolute;
+    width: 0px;
+    right: 0px;
+    top: 0px;
+  }
+  to {
+     position: absolute;
+    width: 300px;
+    right: 0px;
+    top: 0px;
+    
+   
+  }
+
+}
+
+
+            
+            li{
+                list-style-type: none;
+                margin: 20px;
+                
+               
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 1px;
+                padding: 20px;
+             
+             
+                
+                
+            }
+            a:hover{
+                color: rgb(36, 36, 36);
+            }
+            .bg img{
+                height: 700px;
+                width: 100%;
+               
+               
+            
+            }
+            
+            .bg h1{
+                font-size: 50px;
+                text-align: center;
+                padding-bottom: 30px;
+                }
+                .main-info{
+                   position: absolute;
+                   top: 30%;
+                   
+                    
+                }
+                .main-info h2{
+                    text-align: center;
+                }
+                .mid-head{
+                   text-align: center;
+                   margin:  auto;
+                   display: block;
+                   width: 1200px;
+                   margin: 60px auto;
+                 
+
+                }
+               
+                .grid img{
+                    height: 100px;
+                    margin-bottom: 30px;
+                   padding-left: 95px;
+                   width: 100px;
+                  
+                  
+                    
+                    
+                }
+                .grid p{
+                   
+                    text-align: center;
+                    padding: 5px;
+                  
+                }
+                .grid h3{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    color: rgb(110, 0, 0);
+                }
+                
+                .grid{
+                    display: grid;
+                    grid-template-columns: 300px 300px;
+                    justify-content: center;
+                    align-items: center;
+                    grid-gap: 100px;
+                    
+                   
+                    
+                }
+                .grid2{
+                    border: 2px solid red;
+                    height: 300px;
+                    
+                    box-shadow: 10px 10px 10px;
+                    
+                }
+                .lower-mid img{
+                    height: 400px;
+                    width: 100%;
+                    opacity: 0.55;
+                    margin-top: 70px;
+                }
+                .lower-mid h1{
+                    position: absolute;
+                    top: 2208px;
+                    left: 47%;
+
+                   
+                    
+                
+
+                }
+                .lower-mid p{
+                    position: absolute;
+                    top: 2278px;
+                   display: block;
+                   margin: auto;
+                    width: 1000px;
+                    text-align: center;
+                    left: 20%;
+                    font-weight: bolder;
+                }
+                .comments h1{
+                    text-align: center;
+                    padding:30px;
+                    
+
+                }
+                .comments h3{
+                    text-align: center;
+                    padding: 30px;
+                  
+                }
+                .comment{
+                    border: lightgreen solid 2px;
+                    width: 350px;
+                    height: 350px;
+                    padding: 30px;
+                }
+                .comment img{
+                    height:85px;
+                    border: 1px solid;
+                    padding: 5px;
+                    width: 100px;
+                    
+                    margin: 20px 20px 20px 10px;
+
+                    
+
+
+                }
+                #comment2{
+                    position: relative;
+                    left: 1000px;
+                    align-items: center;
+                    box-shadow: -10px 10px 10px;
+
+                }
+                .comment{
+                   margin-left: 100px;
+                   box-shadow: 10px 10px 10px;    }
+                .comment3{
+                    margin-left: 500px;
+                }
+                .contact{
+                    background: rgb(41, 41, 41);
+                    color: white;
+                    margin-top: 40px;
+                    height: 700px;
+                
+                }
+                .contact-inside{
+                   padding: 50px 0px 0px 50px;
+                   margin-left: 30px;
+                }
+               .grid-low{
+                   display: grid;
+                   grid-template-columns: 200px 200px;
+                   grid-gap: 100px;
+                   margin: 30px;
+               }
+               .grid-low img{
+                   height: 20px;
+                   cursor: pointer;
+                  
+               }
+               #logo{
+                   height: 251px;
+                   width: 500px;
+                   margin-top:-50px;
+                   margin-bottom: 70px;
+                   display: block;
+                   margin: auto;
+                   
+               }
+               
+               
+
+              
+
+               
+               
+               
+
+              
+
+                
+                
+               
+               
+
+            
+    </style>
+</head>
+<body>
+    <img src="bg3.png" alt="" class="main">
+    <nav>
+        <div class="nav-logo">
+            
+            <img src="logo.png" alt="logo">
+            <button onclick="show()" id="show" >=</button>
+
+            
+            <div id="fullnav" >
+                <div class="side-bar" id="side_bar" >
+                <button  id="hide">=</button>
+               
+                <ul  id="dd-ul">
+               <a href="#"><li>Home <hr width="200px"></li></a>
+               <a href="#"><li>Login<hr width="200px"></li></a>
+                <a href="#"> <li>Projects <hr width="200px"></li></a>
+                <a href="#"><li>About Us<hr width="200px"></li></a>
+            </ul>
+            
+            </div>
+        </div>
+    </nav>
+    <div class="bg">
+    <img src="bg.png" alt="" id="bg">
+   
+    
+
+        <div class="main-info"><img src="logo.png" alt="" id="logo">
+        <h2>A responsive video background designed byTEMPLATED and relesed under the Creative Commons License and we love to create Innovation .
+            We have a wde varity of famous and produvtive workers.
+        </h2>
+         </div>
+    
+    </div>
+    <hr>
+    <div class="mid-section">
+        <div class="mid-head">
+            <h1>Lorem ipsum dolor.</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero hic perspiciatis, nihil odio vitae veniam rem fugit unde eaque, dicta sunt maiores!</h3>
+        </div>
+        <div class="grid">
+           <div class="grid2">
+               <img src="id.png" alt="">
+               <h3>Make profile</h3>
+               <p>Loremadipisicing elit. Consectetur reiciendis iusto minima officiis neque? Quae consequuntur sed ea esse ex!</p>
+            </div>
+
+           <div class="grid2">
+               <img src="document.jpg" alt="">
+               <h3>Check Document</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilix fugiat quis. Eveniet, eos esse.</p>
+            </div>
+
+           <div class="grid2">
+               <img src="graph.png" alt="">
+               <h3>Know Results</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatione perferendis beatae modi illo tenetur distinctio?</p>
+            </div>
+
+           <div class="grid2">
+               <img src="plane.png" alt="">
+               <h3>Post Doubts</h3>
+               <p>Lorem ipstur adipisicing elit. Fugiat quis nam nostrum voluptate laborum laboriosam molestias aliquam dolores ea repudiandae.</p>
+               
+            </div>
+            <div class="grid2">
+                <img src="green.jpg" alt="">
+                <h3>Use green Energy</h3>
+                <p>Lorem ipsdipisicing elit. Distinctio, laboriosam natus? Reiciendis placeat dolores totam aspernatur excepturi sequi commodi porro.</p>
+            </div>
+            <div class="grid2">
+                <img src="qr.png" alt="">
+                <h3>Scan QR Codes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sus, corporis optio facere repellat vero deleniti?</p>
+            </div>
+
+        </div>
+        <div class="lower-mid">
+            <img src="bg2.jpg" alt="">
+            <h1>Get Inovate</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nam dolores, ipsam eius maiores repellendus non doloribus accusantium? Quia sapiente magni maxime delectus ipsa? Ea hic ratione sit officiis, explicabo voluptatem repellendus a eum voluptatum, inventore doloremque in quasi repudiandae.</p>
+        </div>
+        <div class="comments">
+            <h1>SEE OUR CEO'S </h1>
+            <h3>We are a innovating group who cares about our customers .</h3>
+
+            <div class="comment">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro quidem modi, voluptas nostrum aspernatur expedita, cum a voluptatibus voluptatum harum quae cupiditate odio dolorum voluptates perspiciatis exercitationem eius quos.</p>
+                
+                <img src="dolund.jpg" alt="">
+                <h2>-Dolund Trump-</h2><p>CEO-ABC Inc.</p>
+            </div>
+
+            <div class="comment" id="comment2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro quidem modi, voluptas nostrum aspernatur expedita, cum a voluptatibus voluptatum harum quae cupiditate odio dolorum voluptates perspiciatis exercitationem eius quos.</p>
+                
+               <img src="joe.jpg" alt=""><h2>-Wakar Zaka-</h2><p>CEO-ABC Inc.</p>
+            </div>
+
+            <div class="comment" id="comment3">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro quidem modi, voluptas nostrum aspernatur expedita, cum a voluptatibus voluptatum harum quae cupiditate odio dolorum voluptates perspiciatis exercitationem eius quos.</p>
+                <img src="sandy.jpg" alt=""><h2>-Sandy Saha-</h2><p>CEO-ABC Inc.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-inside">
+            <div class="inside-head">
+                <h1>Contact Us For More</h1><br><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate neque totam dignissimos ut atque repellat nobis ipsa sapiente possimus porro quo modi architecto quaerat, perspiciatis dolorem, accusantium vel. Ullam veniam mollitia sint, illum nemo ipsum commodi sunt necessitatibus enim animi cumque. Veritatis quia ut earum rem animi maxime fugiat vitae!
+                    <div class="grid-low">
+                        <div class="line-1">
+                            <h3>
+                                Contack from here
+                            </h3>
+                        </div>
+                        <div class="line-2">
+                            <h3>All Platforms</h3>
+
+                        </div>
+                        <div class="line-3">Contact us on Twitter<hr></div>
+                        <div class="line-4"><img src="twitter.jpg" alt=""> Twitter</div>
+                        <div class="line-5"> Contact us on Instagram<hr></div>
+                        <div class="line-6"><img src="insta.png" alt="">Instagram</div>
+                        <div class="line-7">Contact us on Facebook<hr></div>
+                        <div class="line-8"><img src="facebook.png" alt=""> Facebook</div>
+                        
+                        
+                    </div><hr width="94%">
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+         function show() {
+           let btn = document.getElementById('show');
+           let side = document.getElementById('side_bar');
+           if (side.style.display !='block') {
+               side.style.display = 'block';
+           }
+           else{
+               side.style.display = 'none';
+           }
+          
+           
+        }
+        
+
+            
+        
+               
+           
+           
+
+           
+        
+
+        
+
+        
+
+       
+    </script>
+</body>
+</html>
